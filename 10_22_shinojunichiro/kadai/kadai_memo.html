@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS復習メモ帳</title>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="memo_css/reset.css">
+    <link rel="stylesheet" href="memo_css/style.css">
+</head>
+    
+    <body>
+        <header>
+            <div class="title">
+                <h1>メモ帳</h1>
+            </div>
+        </header>
+        <main>
+            <!-- button -->
+            <div class="button">
+                <div class="save" id="save">
+                    <input class="save-btn" type="button" value="保存">
+                </div>
+                <div class="add" id="add">
+                    <input class="add-btn" type="button" value="追加">
+                </div>
+                <div class="clear" id="clear">
+                    <input class="clear-btn" type="button" value="クリア">
+                </div>
+            </div>
+            <!-- tab (memo1&2は手順2.で動的生成にします)-->
+            <ul class="tab">
+                <li class="select">memo0</li>
+                <!-- <li class="select">memo1</li>
+                <li class="select">memo2</li> -->
+            </ul>
+            <!-- memo (memo1&2は手順2.で動的生成にします)-->
+            <div class="memo">
+                <ul class="memoarea">
+                    <li><textarea id="memo0" cols="30" rows="10"></textarea></li>
+                    <!-- <li><textarea id="memo1" cols="30" rows="10"></textarea></li>
+                    <li><textarea id="memo2" cols="30" rows="10"></textarea></li> -->
+                </ul>
+            </main>
+    <script type="text/javascript" src="js/memo.js"></script>
+    <!-- <script type="text/javascript" src="js/memo.js"></script> -->
+</body>
+
+</html>
